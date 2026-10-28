@@ -1,0 +1,9 @@
+{
+    "name": "node-service",
+    "version": "1.0.0",
+    "description": "Node.js backend for Kubernetes DevSecOps",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js"
+    }
+  }
