@@ -26,8 +26,8 @@ pipeline {
         stage('Docker Build and Push') {
             steps {
                 withDockerRegistry([credentialsId: 'docker-hub', url: '']) {
-                    sh 'docker build -t deborah/numeric-app:"$GIT_COMMIT" .'
-                    sh 'docker push deborah/numeric-app:"$GIT_COMMIT"'
+                    sh 'docker build -t devsecops2027/numeric-app:"$GIT_COMMIT" .'
+                    sh 'docker push devsecops2027/numeric-app:"$GIT_COMMIT"'
                 }
             }
         }
